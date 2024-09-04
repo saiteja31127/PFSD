@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <title>{%block title%}{%endblock title%} | Astrology prediction System</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body class="p-3 m-0 border-0 bd-example">
+
+    <!-- Example Code -->
+    <style>
+      .hello-msg{
+        font-size: 18px;
+        color: #fff;
+        margin-right: 20px;
+      }
+    </style>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">ASTROLOGY PREDICTION SYSTEM</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/services" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Signs
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/aries">Aries</a></li>
+            <li><a class="dropdown-item" href="/taurus">Taurus</a></li>
+            <li><a class="dropdown-item" href="gemini">Gemini</a></li>
+            <li><a class="dropdown-item" href="cancer">Cancer</a></li>
+            <li><a class="dropdown-item" href="leo">Leo</a></li>
+            <li><a class="dropdown-item" href="virgo">Virgo</a></li>
+            <li><a class="dropdown-item" href="libra">Libra</a></li>
+            <li><a class="dropdown-item" href="scorpio">Scorpio</a></li>
+            <li><a class="dropdown-item" href="sagittarius">Sagittarius</a></li>
+            <li><a class="dropdown-item" href="capricorn">Capricorn</a></li>
+            <li><a class="dropdown-item" href="aquarius">Aquarius</a></li>
+            <li><a class="dropdown-item" href="pisces">Pisces</a></li>               
+              </ul>
+            </li>             
+          </ul>
+          <li class="nav-item">
+            <a href="/astrologers">Astrologers</a>
+          </li>
+          <li class="nav-item">
+            <a href="/zodiac">Your Astrology</a>
+          </li>
+        </div>
+      </div>
+      <span class="hello-msg">WELCOME</span>
+     
+    </nav>
+    {% if messages %}
+    {% for message in messages %}
+    <div class="alert alert-{{ message.tags }} alert-dismissible fade show my-0" role="alert">
+      <strong>{{ message }}</strong>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+     {% endfor %}
+    {% endif %}
+   {% block body %} {% endblock body %} 
+    <!-- End Example Code -->
+    <h1>𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐀𝐬𝐭𝐫𝐨𝐥𝐨𝐠𝐲 𝐩𝐫𝐞𝐝𝐢𝐜𝐭𝐢𝐨𝐧 𝐒𝐲𝐬𝐭𝐞𝐦</h1>
+    <p>
+      Astrology, which derives from the Greek word astrologia (αστρολογία), is the study of heavenly bodies in an attempt to explain and understand the mysterious and complex relationship between the Universe as a whole and human beings. Historically, there are a variety of different forms of astrology, with the first documented evidence of Western and Near East Astrology coming from Ancient Mesopotamia (around 2000 BCE), and astrological systems being developed independently in Ancient China, Mesoamerica, and India. While modern-day astrology primarily focuses on individual-level predictions (what we think of as “horoscopes”), astrologers in ancient time often took a more “big picture” focus as they attempted to use the stars to divine the will of the gods for all of humanity.<br></p>
+    <p>
+      Astrological systems are often quite intricate, and predictions detailed, as can be seen in Professor Goodman’s conversation with modern-day astrologer Kathleen Medina. Intricacy and (alleged) detail are not new: ancient astrologers across cultures all sought better and better observations of the stars to “improve” their predictions. Babylonian sky-priests referenced Enuma Anu Enlil (‘When Anu Enlil’), a collection of seventy tablets containing around 7000 astronomical observations planets, stars, and terrestrial events from the Old Babylonian period. A classic Chinese work called the Zi Wei Dou Shu (紫微斗数) dating back to sometime before 1000 AD was used by the emperor to tell his fortune based on the interpretation of the imperial “astronomers” interpreting the 28 Chinese constellations
+    </p>
+    <p>
+      These collections of observed stellar data can be seen as a sort of forerunner to modern astronomy, a connection we will discuss in much more detail in the PredictionX feature “The Path to Newton.” It’s also important to keep in mind that Astrology is almost unique among ancient systems, because it’s input (see Framework diagram) is based on a fully #deterministic system (the positions of heavenly bodies), but is extremely #human in how it is interpreted. Most ancient systems rely instead on purposely #randomized" inputs (e.g. casting lots), or those occurring #randomly (e.g. augury--flight of birds) in nature. From almost the beginning of recorded history, it was clear people knew the positions of heavenly bodies had a rhythm to them that was not random.
+      </p>
+
+     <center>
+    <img src="https://media.istockphoto.com/id/1315195619/photo/zodiac-signs-inside-of-horoscope-circle-astrology-in-the-sky-with-many-stars-and-moons.jpg?b=1&s=170667a&w=0&k=20&c=Of7_gCT_WPrCy_K35pDBsRnQGtXZEbmoH4qGtvG8CFo=" height="350" width="700">
+
+
+        <div class="container">
+        <h1>CONTACT DETAILS</h1>
+            <h3>𝘔𝘢𝘯𝘢𝘨𝘦𝘳-8340939541</h3>
+            <h3>𝘈𝘥𝘮𝘪𝘯-6300267798</h3>
+            <h3>𝘈𝘴𝘵𝘳𝘰𝘭𝘰𝘨𝘦𝘳-9550311183</h3>
+        </div>
+        <h1>Zodiac Sign Text Symbols </h1>
+        <img src="https://i.pinimg.com/736x/f3/b1/20/f3b12054a6cae9691abf6bfdfecc4a00.jpg" height="550" width="700">
+
+</center>
+    <h1>***𝐀𝐬𝐭𝐫𝐨𝐥𝐨𝐠𝐲 𝐢𝐬 𝐚 𝐥𝐚𝐧𝐠𝐮𝐚𝐠𝐞.𝐈𝐟 𝐲𝐨𝐮 𝐮𝐧𝐝𝐞𝐫𝐬𝐭𝐚𝐧𝐝 𝐭𝐡𝐢𝐬 𝐥𝐚𝐧𝐠𝐮𝐚𝐠𝐞 𝐭𝐡𝐞 𝐬𝐤𝐲 𝐬𝐩𝐞𝐚𝐤𝐬 𝐭𝐨 𝐲𝐨𝐮***</h1>
+  </body>
+</html>
